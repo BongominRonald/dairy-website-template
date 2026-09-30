@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Product Details - Milky Dairy Farm</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Fresh dairy product, organic milk details, nutrition facts, farm origin" name="keywords">
+    <meta content="Learn about our farm-fresh dairy products, certified organic nutrition, and direct cold-chain delivery." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Pro Features Stylesheet -->
+    <link href="css/pro-features.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-light">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <a href="order-tracking.html" class="text-light me-4 text-decoration-none small"><i class="fa fa-truck me-1 text-secondary"></i> Track Order</a>
+                <a href="book-tour.html" class="text-light me-4 text-decoration-none small"><i class="fa fa-calendar-check me-1 text-secondary"></i> Book Farm Visit</a>
+                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
+                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <a href="tel:+0123456789" class="text-dark text-decoration-none fw-bold">+012 345 6789</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0 text-primary">Milky <span class="badge bg-secondary text-dark fs-6 align-middle ms-1">PRO</span></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0 align-items-lg-center">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="product.html" class="nav-item nav-link active">Products</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0 shadow-sm border-0">
+                        <a href="gallery.html" class="dropdown-item">Farm Gallery</a>
+                        <a href="feature.html" class="dropdown-item">Quality Standards</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                        <a href="book-tour.html" class="dropdown-item text-primary fw-semi-bold">Book Farm Tour</a>
+                        <a href="order-tracking.html" class="dropdown-item text-primary fw-semi-bold">Order Tracking</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <!-- Pro Navigation Icons -->
+            <div class="d-flex align-items-center ms-lg-3 gap-2">
+                <button type="button" class="nav-action-btn" data-action="open-search" title="Search catalog">
+                    <i class="fa fa-search"></i>
+                </button>
+                <button type="button" class="nav-action-btn" data-action="open-wishlist" title="Saved favorites">
+                    <i class="bi bi-heart"></i>
+                    <span class="badge-counter wishlist-count" style="display: none;">0</span>
+                </button>
+                <button type="button" class="nav-action-btn" data-action="open-cart" title="Shopping basket">
+                    <i class="bi bi-basket3"></i>
+                    <span class="badge-counter cart-count" style="display: none;">0</span>
+                </button>
+                <a href="cart.html" class="btn btn-secondary rounded-pill py-2 px-3 ms-2 d-none d-xl-inline-block small fw-bold">
+                    <i class="bi bi-cart me-1"></i> Basket
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown" id="headerProductTitle">Dairy Product Details</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="product.html" class="text-white">Products</a></li>
+                    <li class="breadcrumb-item active text-secondary" aria-current="page" id="breadcrumbProductName">Details</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Product Detail Section Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <!-- Product Image Column -->
+                <div class="col-lg-6">
+                    <div class="position-relative rounded overflow-hidden shadow-sm border bg-white p-3 text-center">
+                        <span class="product-badge bg-primary text-white" id="pdBadge">Best Seller</span>
+                        <img src="img/product-1.jpg" alt="Product Image" id="pdImage" class="img-fluid rounded" style="max-height: 480px; width: 100%; object-fit: cover;">
+                    </div>
+                    <div class="row g-2 mt-2">
+                        <div class="col-4">
+                            <div class="p-2 border rounded text-center bg-light">
+                                <i class="fa fa-truck text-primary d-block mb-1"></i>
+                                <small class="fw-bold d-block">Cold-Chain</small>
+                                <span class="text-muted" style="font-size:0.75rem;">Under 4°C</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-2 border rounded text-center bg-light">
+                                <i class="fa fa-leaf text-success d-block mb-1"></i>
+                                <small class="fw-bold d-block">100% Organic</small>
+                                <span class="text-muted" style="font-size:0.75rem;">Grass-Fed</span>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="p-2 border rounded text-center bg-light">
+                                <i class="fa fa-calendar-alt text-warning d-block mb-1"></i>
+                                <small class="fw-bold d-block">Peak Freshness</small>
+                                <span class="text-muted" style="font-size:0.75rem;" id="pdFreshnessDays">10 Days Shelf</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Information Column -->
+                <div class="col-lg-6">
+                    <div class="ps-lg-3">
+                        <span class="badge bg-secondary text-dark px-3 py-2 rounded-pill fw-bold text-uppercase mb-2" id="pdCategory">Fresh Milk</span>
+                        <h1 class="display-6 text-dark mb-2" id="pdTitle">Pure Farm Fresh Whole Milk</h1>
+                        
+                        <!-- Star Rating -->
+                        <div class="d-flex align-items-center mb-3 gap-2">
+                            <div class="product-rating">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <span class="fw-bold text-dark" id="pdRating">4.9 / 5.0</span>
+                            <span class="text-muted small">(<span id="pdReviewsCount">142</span> customer reviews)</span>
+                        </div>
+
+                        <!-- Price Section -->
+                        <div class="d-flex align-items-baseline mb-4 gap-3">
+                            <span class="display-5 fw-bold text-primary" id="pdPrice">$4.50</span>
+                            <span class="fs-4 text-decoration-line-through text-muted" id="pdOldPrice">$6.00</span>
+                            <span class="badge bg-danger rounded-pill px-3 py-1">Save 25%</span>
+                            <span class="text-muted small" id="pdUnit">(1 Liter Bottle)</span>
+                        </div>
+
+                        <p class="fs-6 text-muted mb-4" id="pdShortDesc">
+                            100% pasture-grazed whole milk, gently pasteurized to lock in rich farm creaminess and essential vitamins.
+                        </p>
+
+                        <!-- Nutrition Grid -->
+                        <h6 class="text-uppercase text-muted small fw-bold mb-2">Key Nutritional Highlights (Per Serving):</h6>
+                        <div class="nutrition-grid mb-4" id="pdNutritionGrid">
+                            <!-- Rendered dynamically -->
+                        </div>
+
+                        <!-- Farm Origin & Batch -->
+                        <div class="card bg-light border-0 p-3 mb-4">
+                            <div class="row g-2 small">
+                                <div class="col-sm-6">
+                                    <span class="text-muted">Pasture Origin:</span>
+                                    <strong class="d-block text-dark" id="pdOrigin">Green Valley Pastures - Barn 1</strong>
+                                </div>
+                                <div class="col-sm-6">
+                                    <span class="text-muted">Standard:</span>
+                                    <strong class="d-block text-success"><i class="fa fa-check-circle me-1"></i> Grade A Pasteurized</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Purchase & Quantity Controls -->
+                        <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+                            <div class="qty-control" style="height: 48px;">
+                                <button type="button" class="qty-btn" style="width: 40px; height: 100%; font-size: 1.2rem;" onclick="const q = document.getElementById('pdQuantity'); if (parseInt(q.value)>1) q.value = parseInt(q.value)-1;">-</button>
+                                <input type="number" id="pdQuantity" class="qty-val" value="1" min="1" max="50" style="width: 50px; border:none; height:100%;">
+                                <button type="button" class="qty-btn" style="width: 40px; height: 100%; font-size: 1.2rem;" onclick="const q = document.getElementById('pdQuantity'); q.value = parseInt(q.value)+1;">+</button>
+                            </div>
+                            <button type="button" class="btn btn-primary rounded-pill px-4 py-3 fw-bold flex-grow-1" id="pdAddToCartBtn">
+                                <i class="bi bi-cart-plus me-2 fs-5 align-middle"></i> Add To Basket
+                            </button>
+                            <button type="button" class="btn btn-outline-danger btn-square rounded-circle" id="pdWishlistBtn" style="width: 48px; height: 48px;" title="Save to Favorites">
+                                <i class="bi bi-heart fs-5"></i>
+                            </button>
+                        </div>
+
+                        <div class="small text-muted border-top pt-3">
+                            <span><i class="fa fa-check text-primary me-2"></i>In Stock (<span id="pdStock">35</span> units ready for morning dispatch)</span>
+                            <span class="ms-4"><i class="fa fa-recycle text-primary me-2"></i>Returnable glass bottle program available</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabs Section: Description, Ingredients, Reviews -->
+            <div class="row mt-5 pt-4">
+                <div class="col-12">
+                    <ul class="nav nav-pills justify-content-center mb-4 gap-2" id="productTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active rounded-pill px-4" id="desc-tab" data-bs-toggle="pill" data-bs-target="#desc-pane" type="button">Farm Heritage & Processing</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill px-4" id="ingr-tab" data-bs-toggle="pill" data-bs-target="#ingr-pane" type="button">Ingredients & Quality</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link rounded-pill px-4" id="rev-tab" data-bs-toggle="pill" data-bs-target="#rev-pane" type="button">Customer Reviews (<span id="pdReviewsTabCount">142</span>)</button>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content bg-white p-4 rounded shadow-sm border" id="productTabContent">
+                        <!-- Description Tab -->
+                        <div class="tab-pane fade show active" id="desc-pane" role="tabpanel">
+                            <h5 class="text-dark mb-3">Pure Ethical Dairy Farming</h5>
+                            <p id="pdFullDescription" class="text-muted leading-relaxed">
+                                Our cows graze freely across lush, pesticide-free green pastures rich in clover, ryegrass, and native herbs. We follow sustainable holistic land management to nourish the soil, recharge groundwater, and ensure stress-free living for all our cattle.
+                            </p>
+                        </div>
+
+                        <!-- Ingredients Tab -->
+                        <div class="tab-pane fade" id="ingr-pane" role="tabpanel">
+                            <h5 class="text-dark mb-3">Pure Ingredients & Farm Transparency</h5>
+                            <p><strong>Ingredients:</strong> <span id="pdIngredientsText" class="text-muted">100% Grade-A Whole Cow Milk, Vitamin D3.</span></p>
+                            <p class="text-muted small"><strong>Allergens:</strong> Contains Cow's Milk. Naturally gluten-free. Free from artificial colors, synthetic preservation agents, or growth hormone treatments (rBST / rBGH).</p>
+                        </div>
+
+                        <!-- Reviews Tab -->
+                        <div class="tab-pane fade" id="rev-pane" role="tabpanel">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <div>
+                                    <h5 class="text-dark mb-1">Customer Feedback</h5>
+                                    <div class="product-rating">
+                                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                        <span class="text-dark fw-bold ms-2">4.9 out of 5</span>
+                                    </div>
+                                </div>
+                                <a href="testimonial.html" class="btn btn-secondary rounded-pill px-4">Leave a Review</a>
+                            </div>
+
+                            <div class="border-top pt-3">
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <strong class="text-dark">Rachel Miller</strong>
+                                        <span class="badge bg-success small">Verified Buyer</span>
+                                        <small class="text-muted ms-auto">3 days ago</small>
+                                    </div>
+                                    <div class="product-rating small mb-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    <p class="text-muted small mb-0">Best tasting milk we have ever had! The cream top is delicious in morning espresso.</p>
+                                </div>
+                                <div class="mb-3 border-top pt-3">
+                                    <div class="d-flex align-items-center gap-2 mb-1">
+                                        <strong class="text-dark">George Sanders</strong>
+                                        <span class="badge bg-success small">Verified Buyer</span>
+                                        <small class="text-muted ms-auto">1 week ago</small>
+                                    </div>
+                                    <div class="product-rating small mb-1"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                    <p class="text-muted small mb-0">Freshness is unbeatable. Arrived ice-cold on our porch in an insulated crate.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Related Products Section -->
+            <div class="mt-5 pt-5 border-top">
+                <div class="text-center mx-auto mb-4" style="max-width: 500px;">
+                    <p class="section-title bg-white text-center text-primary px-3">You May Also Like</p>
+                    <h2 class="mb-4">Related Organic Dairy Delights</h2>
+                </div>
+                <div class="row gx-4" id="relatedProductsGrid">
+                    <!-- Related cards rendered dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product Detail Section End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Farmstead</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Green Pasture Way, Valley 2</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+0123456789" class="text-light text-decoration-none">+012 345 6789</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@milkyfarm.com" class="text-light text-decoration-none">info@milkyfarm.com</a></p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="product.html">Fresh Dairy Products</a>
+                    <a class="btn btn-link" href="book-tour.html">Book Farm Tour</a>
+                    <a class="btn btn-link" href="order-tracking.html">Track My Order</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">07:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">08:00 am - 04:00 pm</h6>
+                    <p class="mb-1">Sunday (Farm Tours)</p>
+                    <h6 class="text-light">09:00 am - 02:00 pm</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Farm Newsletter</h5>
+                    <p>Subscribe for weekly fresh harvest updates, organic dairy tips, and special 20% discount vouchers.</p>
+                    <form class="newsletter-form position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 text-white" type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">Join</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold text-dark" href="index.html">Milky Dairy Farm</a>, All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a class="fw-semi-bold text-dark" href="https://htmlcodex.com" target="_blank" rel="noopener">HTML Codex</a> | Pro Features by Milky Engineering Team
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- ==================== PRO OVERLAYS & MODALS ==================== -->
+
+    <!-- Offcanvas Cart Drawer -->
+    <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark fw-bold" id="offcanvasCartLabel">
+                <i class="bi bi-basket3 text-primary me-2"></i> Your Basket (<span class="cart-count">0</span>)
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvasCartItems"></div>
+        <div class="p-3 border-top bg-light" id="offcanvasCartFooter">
+            <div class="d-flex justify-content-between mb-2">
+                <span class="text-muted">Subtotal:</span>
+                <span class="fw-bold" id="drawerSubtotal">$0.00</span>
+            </div>
+            <div class="d-flex justify-content-between mb-3">
+                <span class="fw-bold text-dark">Estimated Total:</span>
+                <span class="fs-5 fw-bold text-primary" id="drawerTotal">$0.00</span>
+            </div>
+            <div class="d-grid gap-2">
+                <a href="cart.html" class="btn btn-outline-secondary rounded-pill py-2">View Full Basket</a>
+                <a href="checkout.html" class="btn btn-primary rounded-pill py-2 fw-bold">Proceed To Checkout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Offcanvas Wishlist Drawer -->
+    <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasWishlist" aria-labelledby="offcanvasWishlistLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark fw-bold" id="offcanvasWishlistLabel">
+                <i class="bi bi-heart text-danger me-2"></i> Saved Favorites (<span class="wishlist-count">0</span>)
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvasWishlistItems"></div>
+    </div>
+
+    <!-- Live Search Modal -->
+    <div class="search-modal-backdrop" id="proSearchModal">
+        <div class="search-modal-box">
+            <div class="search-input-wrapper">
+                <i class="fa fa-search text-primary fs-5"></i>
+                <input type="text" id="proSearchInput" placeholder="Search milk, cheese, butter, tours, services...">
+                <button type="button" class="btn btn-sm btn-light rounded-circle" id="closeSearchModalBtn"><i class="bi bi-x fs-5"></i></button>
+            </div>
+            <div class="search-results-list" id="proSearchResults"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="proToastContainer"></div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Pro Features Logic -->
+    <script src="js/pro-data.js"></script>
+    <script src="js/pro-app.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const productId = parseInt(urlParams.get("id"), 10) || 1;
+            const product = MilkyData.getProductById(productId) || MilkyData.getProducts()[0];
+
+            document.title = `${product.name} - Milky Dairy Farm`;
+            document.getElementById("headerProductTitle").textContent = product.name;
+            document.getElementById("breadcrumbProductName").textContent = product.name;
+            document.getElementById("pdBadge").textContent = product.badge;
+            document.getElementById("pdImage").src = product.img;
+            document.getElementById("pdCategory").textContent = product.categoryLabel;
+            document.getElementById("pdTitle").textContent = product.name;
+            document.getElementById("pdRating").textContent = `${product.rating} / 5.0`;
+            document.getElementById("pdReviewsCount").textContent = product.reviewsCount;
+            document.getElementById("pdReviewsTabCount").textContent = product.reviewsCount;
+            document.getElementById("pdPrice").textContent = `$${product.price.toFixed(2)}`;
+            document.getElementById("pdOldPrice").textContent = `$${product.oldPrice.toFixed(2)}`;
+            document.getElementById("pdUnit").textContent = `(${product.unit})`;
+            document.getElementById("pdShortDesc").textContent = product.shortDesc;
+            document.getElementById("pdOrigin").textContent = product.origin;
+            document.getElementById("pdStock").textContent = product.stock;
+            document.getElementById("pdFreshnessDays").textContent = `${product.freshnessDays} Days Freshness`;
+            document.getElementById("pdFullDescription").textContent = product.description;
+            document.getElementById("pdIngredientsText").textContent = product.ingredients;
+
+            // Nutrition Grid
+            const nutBox = document.getElementById("pdNutritionGrid");
+            if (product.nutrition) {
+                nutBox.innerHTML = `
+                    <div class="nutrition-pill">
+                        <span class="nutrient-val">${product.nutrition.calories}</span>
+                        <span class="nutrient-lbl">Calories</span>
+                    </div>
+                    <div class="nutrition-pill">
+                        <span class="nutrient-val">${product.nutrition.protein}</span>
+                        <span class="nutrient-lbl">Protein</span>
+                    </div>
+                    <div class="nutrition-pill">
+                        <span class="nutrient-val">${product.nutrition.fat}</span>
+                        <span class="nutrient-lbl">Dairy Fat</span>
+                    </div>
+                    <div class="nutrition-pill">
+                        <span class="nutrient-val">${product.nutrition.calcium}</span>
+                        <span class="nutrient-lbl">Calcium</span>
+                    </div>
+                `;
+            }
+
+            // Wire Add to cart
+            document.getElementById("pdAddToCartBtn").onclick = function () {
+                const qty = parseInt(document.getElementById("pdQuantity").value, 10) || 1;
+                MilkyApp.addToCart(product.id, qty);
+            };
+
+            // Wire Wishlist
+            const wlBtn = document.getElementById("pdWishlistBtn");
+            wlBtn.setAttribute("data-wishlist-id", product.id);
+            wlBtn.onclick = function () {
+                MilkyApp.toggleWishlist(product.id);
+            };
+
+            // Render Related Products (products from same or other categories)
+            const related = MilkyData.getProducts().filter(p => p.id !== product.id).slice(0, 4);
+            const relBox = document.getElementById("relatedProductsGrid");
+            let relHtml = "";
+            related.forEach(item => {
+                relHtml += `
+                    <div class="col-md-6 col-lg-3 mb-4">
+                        <div class="product-item h-100">
+                            <div class="position-relative">
+                                <span class="product-badge bg-primary text-white">${item.badge}</span>
+                                <img class="img-fluid w-100" src="${item.img}" alt="${item.name}" style="height: 220px; object-fit: cover;">
+                                <div class="product-overlay">
+                                    <a class="btn btn-square btn-secondary rounded-circle m-1" href="product-detail.html?id=${item.id}" title="View Details"><i class="bi bi-eye"></i></a>
+                                    <button type="button" class="btn btn-square btn-secondary rounded-circle m-1" onclick="MilkyApp.addToCart(${item.id}, 1)" title="Add to Cart"><i class="bi bi-cart"></i></button>
+                                    <button type="button" class="btn btn-square btn-secondary rounded-circle m-1 btn-wishlist" data-wishlist-id="${item.id}" onclick="MilkyApp.toggleWishlist(${item.id})" title="Wishlist"><i class="bi bi-heart"></i></button>
+                                </div>
+                            </div>
+                            <div class="text-center p-4">
+                                <a class="d-block h5 mb-2 text-dark text-decoration-none" href="product-detail.html?id=${item.id}">${item.name}</a>
+                                <span class="text-primary fw-bold me-2">$${item.price.toFixed(2)}</span>
+                                <span class="text-decoration-line-through text-muted small">$${item.oldPrice.toFixed(2)}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+            relBox.innerHTML = relHtml;
+        });
+    </script>
+</body>
+
+</html>

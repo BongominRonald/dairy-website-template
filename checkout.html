@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Checkout & Doorstep Delivery - Milky Dairy Farm</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Dairy delivery checkout, organic milk order, farm delivery" name="keywords">
+    <meta content="Complete your fresh dairy order with safe refrigerated doorstep delivery." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">   
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Pro Features Stylesheet -->
+    <link href="css/pro-features.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-0">
+        <div class="row g-0 d-none d-lg-flex">
+            <div class="col-lg-6 ps-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center text-light">
+                    <span>Follow Us:</span>
+                    <a class="btn btn-link text-light" href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-link text-light" href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-link text-light" href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-link text-light" href="https://instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-end">
+                <a href="order-tracking.html" class="text-light me-4 text-decoration-none small"><i class="fa fa-truck me-1 text-secondary"></i> Track Order</a>
+                <a href="book-tour.html" class="text-light me-4 text-decoration-none small"><i class="fa fa-calendar-check me-1 text-secondary"></i> Book Farm Visit</a>
+                <div class="h-100 bg-secondary d-inline-flex align-items-center text-dark py-2 px-4">
+                    <span class="me-2 fw-semi-bold"><i class="fa fa-phone-alt me-2"></i>Call Us:</span>
+                    <a href="tel:+0123456789" class="text-dark text-decoration-none fw-bold">+012 345 6789</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <h1 class="m-0 text-primary">Milky <span class="badge bg-secondary text-dark fs-6 align-middle ms-1">PRO</span></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0 align-items-lg-center">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="product.html" class="nav-item nav-link">Products</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu bg-light m-0 shadow-sm border-0">
+                        <a href="gallery.html" class="dropdown-item">Farm Gallery</a>
+                        <a href="feature.html" class="dropdown-item">Quality Standards</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonials</a>
+                        <a href="book-tour.html" class="dropdown-item text-primary fw-semi-bold">Book Farm Tour</a>
+                        <a href="order-tracking.html" class="dropdown-item text-primary fw-semi-bold">Order Tracking</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            <!-- Pro Navigation Icons -->
+            <div class="d-flex align-items-center ms-lg-3 gap-2">
+                <button type="button" class="nav-action-btn" data-action="open-search" title="Search catalog">
+                    <i class="fa fa-search"></i>
+                </button>
+                <button type="button" class="nav-action-btn" data-action="open-wishlist" title="Saved favorites">
+                    <i class="bi bi-heart"></i>
+                    <span class="badge-counter wishlist-count" style="display: none;">0</span>
+                </button>
+                <button type="button" class="nav-action-btn" data-action="open-cart" title="Shopping basket">
+                    <i class="bi bi-basket3"></i>
+                    <span class="badge-counter cart-count" style="display: none;">0</span>
+                </button>
+                <a href="cart.html" class="btn btn-outline-secondary rounded-pill py-2 px-3 ms-2 d-none d-xl-inline-block small fw-bold">
+                    <i class="bi bi-cart me-1"></i> Basket
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-white mb-4 animated slideInDown">Doorstep Checkout</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb justify-content-center mb-0">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white">Home</a></li>
+                    <li class="breadcrumb-item"><a href="cart.html" class="text-white">Basket</a></li>
+                    <li class="breadcrumb-item active text-secondary" aria-current="page">Checkout</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Checkout Form Section Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <form id="checkoutForm" onsubmit="event.preventDefault(); MilkyApp.handlePlaceOrder(this);">
+                <div class="row g-5">
+                    <!-- Delivery & Billing Address -->
+                    <div class="col-lg-7">
+                        <div class="checkout-card p-4 mb-4">
+                            <h4 class="mb-4 text-dark"><i class="fa fa-map-marker-alt text-primary me-2"></i> 1. Delivery Details</h4>
+                            <div class="row g-3">
+                                <div class="col-sm-6">
+                                    <label class="form-label small fw-bold">First Name <span class="text-danger">*</span></label>
+                                    <input type="text" name="firstName" class="form-control" placeholder="Ronald" value="Ronald" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label small fw-bold">Last Name <span class="text-danger">*</span></label>
+                                    <input type="text" name="lastName" class="form-control" placeholder="Bongomin" value="Bongomin" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label small fw-bold">Email Address <span class="text-danger">*</span></label>
+                                    <input type="email" name="email" class="form-control" placeholder="ronald@example.com" value="abonga029@gmail.com" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label small fw-bold">Phone Number <span class="text-danger">*</span></label>
+                                    <input type="tel" name="phone" class="form-control" placeholder="+012 345 6789" value="+012 345 6789" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold">Delivery Street Address <span class="text-danger">*</span></label>
+                                    <input type="text" name="address" class="form-control" placeholder="House #, Street name, Apartment / Suite" value="124 Farmstead Lane" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label small fw-bold">City / Township <span class="text-danger">*</span></label>
+                                    <input type="text" name="city" class="form-control" placeholder="Green Valley" value="Green Valley" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="form-label small fw-bold">Preferred Delivery Window <span class="text-danger">*</span></label>
+                                    <select name="deliverySlot" class="form-select" required>
+                                        <option value="Morning (7:00 AM - 10:00 AM)" selected>Morning (7:00 AM - 10:00 AM) - Best for Fresh Milk</option>
+                                        <option value="Afternoon (1:00 PM - 4:00 PM)">Afternoon (1:00 PM - 4:00 PM)</option>
+                                        <option value="Evening (5:00 PM - 8:00 PM)">Evening (5:00 PM - 8:00 PM)</option>
+                                        <option value="Express Cold-Chain (Within 2 Hours)">Express Cold-Chain (Within 2 Hours)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold">Delivery Notes (Optional)</label>
+                                    <textarea name="notes" class="form-control" rows="2" placeholder="e.g. Please place inside the porch cooler box or ring doorbell."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment Methods Card -->
+                        <div class="checkout-card p-4">
+                            <h4 class="mb-4 text-dark"><i class="fa fa-credit-card text-primary me-2"></i> 2. Payment Method</h4>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="payment-method-card selected d-flex align-items-center justify-content-between" onclick="document.getElementById('pmCard').checked = true; document.getElementById('cardDetailsBox').style.display='block';">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="pmCard" value="Credit / Debit Card" checked>
+                                            <label class="form-check-label fw-bold" for="pmCard">Credit / Debit Card</label>
+                                            <small class="text-muted d-block">Visa, Mastercard, American Express</small>
+                                        </div>
+                                        <div class="text-muted fs-4">
+                                            <i class="fab fa-cc-visa me-1"></i>
+                                            <i class="fab fa-cc-mastercard me-1"></i>
+                                            <i class="fab fa-cc-amex"></i>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card Input Fields -->
+                                <div class="col-12" id="cardDetailsBox">
+                                    <div class="p-3 bg-light rounded border">
+                                        <div class="row g-2">
+                                            <div class="col-12">
+                                                <label class="small text-muted">Card Number</label>
+                                                <div class="input-group">
+                                                    <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                                                    <input type="text" class="form-control" placeholder="4242 &bull;&bull;&bull;&bull; &bull;&bull;&bull;&bull; 4242" value="4242 •••• •••• 4242">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="small text-muted">Expiry Date</label>
+                                                <input type="text" class="form-control" placeholder="MM/YY" value="12/28">
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="small text-muted">CVV / CVC</label>
+                                                <input type="password" class="form-control" placeholder="123" value="888" maxlength="4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="payment-method-card d-flex align-items-center justify-content-between" onclick="document.getElementById('pmCod').checked = true; document.getElementById('cardDetailsBox').style.display='none';">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="pmCod" value="Cash On Delivery">
+                                            <label class="form-check-label fw-bold" for="pmCod">Cash On Doorstep Delivery (COD)</label>
+                                            <small class="text-muted d-block">Pay our driver upon inspection of cold goods.</small>
+                                        </div>
+                                        <i class="fa fa-money-bill-wave text-success fs-3"></i>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="payment-method-card d-flex align-items-center justify-content-between" onclick="document.getElementById('pmMobile').checked = true; document.getElementById('cardDetailsBox').style.display='none';">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="paymentMethod" id="pmMobile" value="Mobile Money (M-Pesa / MTN)">
+                                            <label class="form-check-label fw-bold" for="pmMobile">Mobile Money / Digital Wallet</label>
+                                            <small class="text-muted d-block">Instant mobile checkout prompt sent to your device.</small>
+                                        </div>
+                                        <i class="fa fa-mobile-alt text-primary fs-3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Order Review & Placement -->
+                    <div class="col-lg-5">
+                        <div class="checkout-card p-4">
+                            <h4 class="mb-3 text-dark border-bottom pb-2">Order Review</h4>
+                            
+                            <!-- Dynamic Cart Items Preview -->
+                            <div id="checkoutItemsList" class="mb-3" style="max-height: 280px; overflow-y: auto;">
+                                <!-- Rendered dynamically -->
+                            </div>
+
+                            <!-- Totals Breakdown -->
+                            <div class="border-top pt-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted">Subtotal:</span>
+                                    <span class="fw-bold" id="coSubtotal">$0.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2" id="coDiscountRow" style="display:none !important;">
+                                    <span class="text-success">Promo Discount:</span>
+                                    <span class="fw-bold text-success" id="coDiscount">-$0.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span class="text-muted">Cold-Chain Shipping:</span>
+                                    <span class="fw-bold" id="coShipping">$5.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <span class="text-muted">Taxes (5%):</span>
+                                    <span class="fw-bold" id="coTax">$0.00</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center border-top pt-3 mb-4">
+                                    <span class="fs-5 fw-bold text-dark">Total Amount:</span>
+                                    <span class="fs-4 fw-bold text-primary" id="coTotal">$0.00</span>
+                                </div>
+                            </div>
+
+                            <button type="submit" id="placeOrderBtn" class="btn btn-primary w-100 py-3 rounded-pill fw-bold text-uppercase fs-6 shadow">
+                                <i class="fa fa-check-circle me-2"></i> Confirm & Place Order
+                            </button>
+
+                            <div class="mt-3 p-3 bg-light rounded text-center small text-muted">
+                                <i class="fa fa-shield-alt text-success me-1"></i> Your personal and transaction details are encrypted with TLS 1.3 security.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- Checkout Form Section End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark footer mt-5 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Our Farmstead</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Green Pasture Way, Valley 2</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i><a href="tel:+0123456789" class="text-light text-decoration-none">+012 345 6789</a></p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i><a href="mailto:info@milkyfarm.com" class="text-light text-decoration-none">info@milkyfarm.com</a></p>
+                    <div class="d-flex pt-3">
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-secondary rounded-circle me-2" href="https://linkedin.com" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="product.html">Fresh Dairy Products</a>
+                    <a class="btn btn-link" href="book-tour.html">Book Farm Tour</a>
+                    <a class="btn btn-link" href="order-tracking.html">Track My Order</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Business Hours</h5>
+                    <p class="mb-1">Monday - Friday</p>
+                    <h6 class="text-light">07:00 am - 07:00 pm</h6>
+                    <p class="mb-1">Saturday</p>
+                    <h6 class="text-light">08:00 am - 04:00 pm</h6>
+                    <p class="mb-1">Sunday (Farm Tours)</p>
+                    <h6 class="text-light">09:00 am - 02:00 pm</h6>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Farm Newsletter</h5>
+                    <p>Subscribe for weekly fresh harvest updates, organic dairy tips, and special 20% discount vouchers.</p>
+                    <form class="newsletter-form position-relative w-100">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5 text-white" type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2">Join</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-secondary text-body copyright py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="fw-semi-bold text-dark" href="index.html">Milky Dairy Farm</a>, All Rights Reserved.
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    Designed By <a class="fw-semi-bold text-dark" href="https://htmlcodex.com" target="_blank" rel="noopener">HTML Codex</a> | Pro Features by Milky Engineering Team
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- ==================== ORDER CONFIRMATION RECEIPT MODAL ==================== -->
+    <div class="modal fade" id="orderConfirmationModal" tabindex="-1" aria-labelledby="orderConfirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content border-0 shadow">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title text-white" id="orderConfirmationModalLabel">
+                        <i class="fa fa-check-circle me-2 text-secondary"></i> Order Placed Successfully!
+                    </h5>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="text-center mb-4">
+                        <div class="btn-square bg-secondary text-dark rounded-circle mx-auto mb-3" style="width: 70px; height: 70px; font-size: 2rem;">
+                            <i class="fa fa-truck"></i>
+                        </div>
+                        <h4 class="text-dark">Thank You For Your Dairy Order!</h4>
+                        <p class="text-muted">Your order has been transmitted to our farm dispatch barn. We will bottle and chill your items for morning delivery.</p>
+                        <div class="badge bg-primary fs-6 p-2 px-4 rounded-pill">
+                            Order Reference: <span id="rcptOrderId" class="fw-bold text-secondary">MLK-000000</span>
+                        </div>
+                    </div>
+
+                    <div class="card bg-light border-0 p-3 mb-3">
+                        <div class="row g-2 small">
+                            <div class="col-6"><strong>Date:</strong> <span id="rcptDate">-</span></div>
+                            <div class="col-6"><strong>Customer:</strong> <span id="rcptName">-</span></div>
+                            <div class="col-6"><strong>Destination:</strong> <span id="rcptAddress">-</span></div>
+                            <div class="col-6"><strong>Delivery Window:</strong> <span id="rcptSlot">-</span></div>
+                            <div class="col-6"><strong>Payment:</strong> <span id="rcptPayment">-</span></div>
+                            <div class="col-6"><strong>Total Charged:</strong> <span id="rcptTotal" class="fw-bold text-primary">-</span></div>
+                        </div>
+                    </div>
+
+                    <h6 class="fw-bold text-dark border-bottom pb-2">Items Ordered</h6>
+                    <ul class="list-group list-group-flush mb-4 small" id="rcptItems">
+                        <!-- Items rendered here -->
+                    </ul>
+
+                    <div class="d-flex flex-wrap justify-content-between gap-2">
+                        <button type="button" class="btn btn-outline-secondary rounded-pill" onclick="window.print()">
+                            <i class="fa fa-print me-1"></i> Print Receipt
+                        </button>
+                        <a href="order-tracking.html" id="rcptTrackLink" class="btn btn-primary rounded-pill px-4 fw-bold">
+                            <i class="fa fa-truck me-1"></i> Track Live Status
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==================== PRO OVERLAYS & MODALS ==================== -->
+
+    <!-- Offcanvas Cart Drawer -->
+    <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark fw-bold" id="offcanvasCartLabel">
+                <i class="bi bi-basket3 text-primary me-2"></i> Your Basket (<span class="cart-count">0</span>)
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvasCartItems"></div>
+    </div>
+
+    <!-- Offcanvas Wishlist Drawer -->
+    <div class="offcanvas offcanvas-end offcanvas-cart" tabindex="-1" id="offcanvasWishlist" aria-labelledby="offcanvasWishlistLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-dark fw-bold" id="offcanvasWishlistLabel">
+                <i class="bi bi-heart text-danger me-2"></i> Saved Favorites (<span class="wishlist-count">0</span>)
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="offcanvasWishlistItems"></div>
+    </div>
+
+    <!-- Live Search Modal -->
+    <div class="search-modal-backdrop" id="proSearchModal">
+        <div class="search-modal-box">
+            <div class="search-input-wrapper">
+                <i class="fa fa-search text-primary fs-5"></i>
+                <input type="text" id="proSearchInput" placeholder="Search milk, cheese, butter, tours, services...">
+                <button type="button" class="btn btn-sm btn-light rounded-circle" id="closeSearchModalBtn"><i class="bi bi-x fs-5"></i></button>
+            </div>
+            <div class="search-results-list" id="proSearchResults"></div>
+        </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="proToastContainer"></div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <!-- Pro Features Logic -->
+    <script src="js/pro-data.js"></script>
+    <script src="js/pro-app.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            MilkyApp.renderCheckoutSummary();
+        });
+    </script>
+</body>
+
+</html>

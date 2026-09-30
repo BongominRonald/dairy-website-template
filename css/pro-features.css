@@ -1,0 +1,622 @@
+/* ==========================================================================
+   Milky Pro Features - Professional Dairy Web Application Stylesheet
+   Theme Colors:
+   --primary:   #5B8C51 (Fresh Organic Pasture Green)
+   --secondary: #EDDD5E (Warm Golden Dairy Cream)
+   --dark:      #404A3D (Deep Forest Earth)
+   --light:     #F7F7F7 (Pure Milk White)
+   ========================================================================== */
+
+/* Navbar Icons & Badges */
+.nav-action-btn {
+    position: relative;
+    background: transparent;
+    border: none;
+    color: var(--dark);
+    font-size: 1.25rem;
+    padding: 0.5rem;
+    line-height: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+}
+
+.nav-action-btn:hover {
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.nav-action-btn .badge-counter {
+    position: absolute;
+    top: 0;
+    right: -4px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    min-width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    background-color: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.nav-action-btn .badge-counter.bump {
+    transform: scale(1.35);
+}
+
+/* Wishlist Button on Product Cards */
+.btn-wishlist {
+    transition: all 0.3s ease;
+    color: #404A3D;
+    background: #ffffff;
+}
+
+.btn-wishlist.active,
+.btn-wishlist:hover {
+    background: #dc3545 !important;
+    color: #ffffff !important;
+    border-color: #dc3545 !important;
+}
+
+.btn-wishlist.active i::before {
+    content: "\f415"; /* bi-suit-heart-fill or bi-heart-fill */
+}
+
+/* Product Card Pro Enhancements */
+.product-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.product-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
+}
+
+.product-item .product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.product-item .product-overlay {
+    background: rgba(64, 74, 61, 0.75) !important;
+    backdrop-filter: blur(2px);
+    gap: 8px;
+}
+
+.product-item .product-overlay .btn {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.product-item .product-overlay .btn:hover {
+    transform: scale(1.12);
+}
+
+.product-rating {
+    color: #ffb703;
+    font-size: 0.85rem;
+}
+
+/* Offcanvas Cart & Wishlist Drawers */
+.offcanvas-cart {
+    width: 380px !important;
+    max-width: 90vw !important;
+}
+
+.offcanvas-header {
+    background-color: #f8faf7;
+    border-bottom: 1px solid #e2e8df;
+}
+
+.cart-item-row {
+    padding: 12px 0;
+    border-bottom: 1px solid #edf1eb;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-item-img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #e5e9e3;
+}
+
+.cart-item-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 2px;
+    color: var(--dark);
+    display: block;
+    text-decoration: none;
+}
+
+.cart-item-title:hover {
+    color: var(--primary);
+}
+
+.cart-item-price {
+    font-size: 0.9rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.qty-control {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #d5ded1;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+.qty-btn {
+    background: #f4f6f3;
+    border: none;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--dark);
+    transition: background-color 0.2s;
+}
+
+.qty-btn:hover {
+    background: #e4ebe1;
+}
+
+.qty-val {
+    width: 32px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.free-shipping-progress {
+    background-color: #f1f5ef;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.free-shipping-progress .progress {
+    height: 6px;
+    border-radius: 3px;
+    background-color: #dbe4d7;
+}
+
+.free-shipping-progress .progress-bar {
+    background-color: var(--primary);
+}
+
+/* Toast Container */
+#proToastContainer {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 10800;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    pointer-events: none;
+}
+
+.pro-toast {
+    pointer-events: auto;
+    min-width: 300px;
+    max-width: 400px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid var(--primary);
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    animation: toastSlideIn 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.pro-toast.toast-danger {
+    border-left-color: #dc3545;
+}
+
+.pro-toast.toast-warning {
+    border-left-color: #ffc107;
+}
+
+.pro-toast.toast-info {
+    border-left-color: #0dcaf0;
+}
+
+.pro-toast .toast-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.pro-toast .toast-body-text {
+    flex-grow: 1;
+    font-size: 0.9rem;
+    color: #333333;
+    line-height: 1.35;
+}
+
+.pro-toast .toast-close {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #999;
+    cursor: pointer;
+    line-height: 1;
+}
+
+@keyframes toastSlideIn {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Live Search Modal */
+.search-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(28, 33, 27, 0.85);
+    backdrop-filter: blur(5px);
+    z-index: 10500;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 80px;
+}
+
+.search-modal-backdrop.show {
+    display: flex;
+    opacity: 1;
+}
+
+.search-modal-box {
+    background: #ffffff;
+    width: 90%;
+    max-width: 680px;
+    border-radius: 12px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    animation: searchDrop 0.3s ease-out;
+}
+
+@keyframes searchDrop {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.search-input-wrapper {
+    position: relative;
+    padding: 18px 24px;
+    border-bottom: 1px solid #eef2ed;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.search-input-wrapper input {
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    width: 100%;
+    color: var(--dark);
+}
+
+.search-results-list {
+    max-height: 380px;
+    overflow-y: auto;
+    padding: 12px 18px;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--dark);
+    transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+    background-color: #f3f7f1;
+    color: var(--primary);
+}
+
+.search-result-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.search-popular-tags {
+    padding: 12px 24px 18px;
+    background: #fafcfa;
+    border-top: 1px solid #eef2ed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+}
+
+.search-tag-badge {
+    background: #e8efe5;
+    color: var(--dark);
+    padding: 4px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+}
+
+.search-tag-badge:hover {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+/* Category Filter Pills */
+.filter-pills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.filter-pill-btn {
+    border: 1px solid #cfdad0;
+    background: #ffffff;
+    color: var(--dark);
+    padding: 8px 22px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-pill-btn.active,
+.filter-pill-btn:hover {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+    box-shadow: 0 4px 10px rgba(91, 140, 81, 0.3);
+}
+
+/* Nutrition Table Styling */
+.nutrition-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+    gap: 12px;
+    margin: 1.25rem 0;
+}
+
+.nutrition-pill {
+    background: #f5f8f3;
+    border: 1px solid #e2ede0;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.nutrition-pill .nutrient-val {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--primary);
+    display: block;
+}
+
+.nutrition-pill .nutrient-lbl {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #666;
+    letter-spacing: 0.5px;
+}
+
+/* Order Tracking Stepper Timeline */
+.tracking-timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.tracking-step {
+    position: relative;
+    padding-left: 55px;
+    margin-bottom: 30px;
+}
+
+.tracking-step:last-child {
+    margin-bottom: 0;
+}
+
+.tracking-step::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 36px;
+    bottom: -24px;
+    width: 3px;
+    background: #dee2e6;
+}
+
+.tracking-step:last-child::before {
+    display: none;
+}
+
+.tracking-step.completed::before {
+    background: var(--primary);
+}
+
+.tracking-step-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #e9ecef;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    z-index: 2;
+    transition: all 0.3s ease;
+}
+
+.tracking-step.completed .tracking-step-icon {
+    background: var(--primary);
+    color: #ffffff;
+    box-shadow: 0 0 0 5px rgba(91, 140, 81, 0.2);
+}
+
+.tracking-step.active .tracking-step-icon {
+    background: var(--secondary);
+    color: var(--dark);
+    box-shadow: 0 0 0 5px rgba(237, 221, 94, 0.4);
+    animation: pulseStep 1.8s infinite;
+}
+
+@keyframes pulseStep {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+    100% { transform: scale(1); }
+}
+
+/* Checkout UI */
+.checkout-card {
+    border-radius: 12px;
+    border: 1px solid #e7eee5;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.payment-method-card {
+    border: 2px solid #e4eae2;
+    border-radius: 8px;
+    padding: 14px 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.payment-method-card:hover,
+.payment-method-card.selected {
+    border-color: var(--primary);
+    background: #f9fcf8;
+}
+
+/* Star Rating Selector */
+.star-rating-selector {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    gap: 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.star-rating-selector input {
+    display: none;
+}
+
+.star-rating-selector label {
+    color: #d1d5db;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.star-rating-selector label:hover,
+.star-rating-selector label:hover ~ label,
+.star-rating-selector input:checked ~ label {
+    color: #f59e0b;
+}
+
+/* Floating Farm Tour CTA Banner / Button */
+.floating-order-btn {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 99;
+    box-shadow: 0 8px 25px rgba(91, 140, 81, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+/* WhatsApp / Quick Help Float */
+.floating-help-btn {
+    position: fixed;
+    bottom: 95px;
+    right: 30px;
+    z-index: 99;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #25d366;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.floating-help-btn:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .floating-order-btn {
+        display: none;
+    }
+}
